@@ -1,4 +1,4 @@
-package com.vytec.app;
+package com.tmnas.group;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
