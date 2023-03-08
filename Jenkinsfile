@@ -26,6 +26,12 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            steps {
+                sh "docker build -t mywebapp ."
+                sh "docker run -itd --rm --name tomcat9 -p 9090:8080 mywebapp"
+            }
+        }
     }
 }
 
