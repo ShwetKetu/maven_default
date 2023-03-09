@@ -14,7 +14,7 @@ pipeline {
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
-                sh 'cp /var/lib/jenkins/workspace/CID_Job/target/sample.war /opt/jenkins/maven_default/ROOT.war'
+                sh 'cp /var/lib/jenkins/workspace/CICD_Job/target/sample.war /opt/jenkins/maven_default/ROOT.war'
 
             }
 
