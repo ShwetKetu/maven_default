@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World...Welcome To CICD Pipeline</h2>
+<h2>Hello World...Welcome To CICD</h2>
 </body>
 </html>
