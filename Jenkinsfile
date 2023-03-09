@@ -5,7 +5,6 @@ pipeline {
         // Install the Maven version configured as "maven" and add it to the path.
         maven "maven"
     }
-
     stages {
         stage('Build') {
             steps {
