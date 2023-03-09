@@ -10,9 +10,9 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                sh "docker stop tomcat9"
-                sh "docker rmi tomcat:9.0"
-                sh "docker rmi mywebapp"
+                sh "docker stop tomcat9 || true"
+                sh "docker rmi tomcat:9.0 || true"
+                sh "docker rmi mywebapp || true"
                 git 'https://github.com/shwetketu/maven_default.git'
 
                 // Run Maven on a Unix agent.
