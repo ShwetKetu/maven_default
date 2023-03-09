@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World...Welcome To CICD</h2>
+<h2>Hello...Welcome To CICD World</h2>
 </body>
 </html>
