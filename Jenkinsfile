@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'agent1'}
+    agent { label 'agent2'}
 
     tools {
         // Install the Maven version configured as "maven" and add it to the path.
@@ -13,7 +13,8 @@ pipeline {
                 git 'https://github.com/shwetketu/maven_default.git'
 
                 // Run Maven on a Unix agent.
-                sh "mvn -Dmaven.test.failure.ignore=true clean install"
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                sh 'cp /var/lib/jenkins/workspace/CID_Job/target/sample.war /opt/jenkins/maven_default/ROOT.war'
 
             }
 
