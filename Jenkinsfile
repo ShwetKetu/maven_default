@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                sh "sudo chown jenkins:jenkins /var/run/docker.sock"
                 sh "sudo chmod -R 777 /var/run/docker.sock"
                 sh "docker stop tomcat9 || true"
                 sh "docker rmi tomcat:9.0 || true"
