@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "ansible-playbook build_run_docker.yaml"
+                sh "ansible-playbook /opt/jenkins/maven_default/build_run_docker.yaml"
             }
         }
     }
